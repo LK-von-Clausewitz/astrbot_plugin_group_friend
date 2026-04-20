@@ -1,0 +1,77 @@
+{
+  "bot_qq": {
+    "description": "机器人自己的 QQ 号，用于过滤自己发的消息和识别被 @",
+    "type": "string",
+    "default": ""
+  },
+  "enabled_groups": {
+    "description": "启用的群号列表，留空则对所有群生效",
+    "type": "list",
+    "items": {
+      "type": "string"
+    },
+    "default": []
+  },
+  "trigger_at": {
+    "description": "被 @ 时是否回复",
+    "type": "boolean",
+    "default": true
+  },
+  "trigger_random_prob": {
+    "description": "随机接话概率（1-100），0 表示关闭",
+    "type": "int",
+    "default": 10
+  },
+  "trigger_keywords": {
+    "description": "触发回复的关键词列表",
+    "type": "list",
+    "items": {
+      "type": "string"
+    },
+    "default": []
+  },
+  "bot_name": {
+    "description": "机器人在群里的昵称/外号列表，被提到时触发回复",
+    "type": "list",
+    "items": {
+      "type": "string"
+    },
+    "default": ["机器人", "bot"]
+  },
+  "max_history": {
+    "description": "每个群保留的最近消息条数",
+    "type": "int",
+    "default": 20
+  },
+  "reply_cooldown": {
+    "description": "同一群的回复冷却时间（秒），防止刷屏",
+    "type": "int",
+    "default": 5
+  },
+  "system_prompt": {
+    "description": "自定义人格设定（留空则使用默认人设）。可在 AstrBot 面板中修改。",
+    "type": "string",
+    "default": "",
+    "hint": "支持多行文本，可定义机器人的性格、说话风格、口头禅等"
+  },
+  "meme_folder": {
+    "description": "表情包文件夹路径，留空则使用插件目录下的 memes/ 文件夹",
+    "type": "string",
+    "default": ""
+  },
+  "auto_collect_memes": {
+    "description": "是否自动收集群聊中的表情包/图片",
+    "type": "boolean",
+    "default": true
+  },
+  "collect_only_sticker": {
+    "description": "仅收集表情包（subType=1），关闭则收集所有图片",
+    "type": "boolean",
+    "default": true
+  },
+  "max_meme_count": {
+    "description": "自动收集的表情包上限，超过时删除最旧的",
+    "type": "int",
+    "default": 200
+  }
+}
