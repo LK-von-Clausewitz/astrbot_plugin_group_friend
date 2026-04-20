@@ -1,8 +1,8 @@
 name: astrbot_plugin_group_friend
 desc: 基于 AstrBot + NapCat 的 QQ 群聊人格化机器人插件。像真实朋友一样和群友自然聊天，支持发送本地表情包，可自定义人格设定。
-author: AI Assistant
+author: LK-von-Clausewitz
 version: 1.0.0
-repo: https://github.com/yourname/astrbot_plugin_group_friend
+repo: https://github.com/LK-von-Clausewitz/astrbot_plugin_group_friend
 display_name: 群聊人格化好友
 support_platforms:
   - aiocqhttp
