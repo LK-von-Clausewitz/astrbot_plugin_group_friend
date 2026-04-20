@@ -17,10 +17,10 @@ from astrbot.api.star import Context, Star, register
 
 @register(
     "group_friend",
-    "AI Assistant",
+    "LK-von-Clausewitz",
     "QQ群聊人格化机器人插件：像真实朋友一样和群友聊天，支持发送表情包",
     "1.0.0",
-    "https://github.com/yourname/astrbot_plugin_group_friend",
+    "https://github.com/LK-von-Clausewitz/astrbot_plugin_group_friend",
 )
 class GroupFriendPlugin(Star):
     def __init__(self, context: Context, config: dict):
